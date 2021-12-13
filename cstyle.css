@@ -23,7 +23,7 @@
  align-items: stretch;
 margin-left: 0px;
 margin-bottom: 0px;
-min-height: 100vh;
+
 }
 
 .part1{
@@ -157,7 +157,8 @@ color: #243D6F;
    width: 35%;
   height: 100%;
    font-family: Roboto;
-   padding:  42px 50px 100%;
+   padding:  42px 50px ;
+   padding-bottom: 100%;
   
  }
   .part2__date{
