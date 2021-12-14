@@ -29,8 +29,8 @@ margin-bottom: 0px;
 .part1{
 
 box-sizing: border-box;
-width: 65%;
-height: 100%;
+width: 65vw;
+height: 100vw;
 padding: 70px 42px ;
 
 
@@ -74,7 +74,7 @@ color: #243D6F;
   }
 
  .timetable{
-   padding: 58px 2px 0 ;
+   padding: 50px 2px 0 ;
    
    display: flex;
    flex-direction: row;
@@ -94,7 +94,8 @@ color: #243D6F;
    position: relative;
  }
  .line{
-   border-bottom: 2px solid #F3F3F3;
+   border-bottom: 2px solid #F3F3F3 ;
+   opacity: 50%;
    width: 50vw;
    position: absolute;
    left: 68px;
@@ -102,10 +103,10 @@ color: #243D6F;
  }
 
  .plan{
-   padding: 34px 60px 0;
+   padding: 45px 30px 0;
    display: flex;
    flex-direction: column;
-   align-items: stretch;
+   
    
 
  }
@@ -119,50 +120,51 @@ color: #243D6F;
     border-bottom: none;
     border-left: solid #8576ED ;
    
-   width: 560px;
-  height: 62px;
+   width: 50vw;
+  height: 6vw;
    color:  #243D6F;
    background: #8576ED26;
-   margin-bottom: 60px;
+   margin-top: -1vw;
+   margin-bottom: 65px;
  }
 
  .blue-block{
    box-sizing: border-box;
-  position: static;
-  padding:  69px 34px 34px ; 
+  
+  padding:  80px 34px  ; 
   border: groove;
     border-top: none;
     border-right: none;
     border-bottom: none;
     border-left: solid #3D83F9;
-  width: 560px;
-  height: 154.5px;
+  width: 50vw;
+  height: 15vw;
   color: #243D6F;
   background: #3D83F926;
-  margin-bottom: 89.5px;
+  margin-bottom: 100px;
 
  }
  .orange-block{
    box-sizing: border-box;
-  position: static;
+ 
   padding: 53px 34px;
   border: groove;
     border-top: none;
     border-right: none;
     border-bottom: none;
     border-left: solid #EEA57C;
-  width: 560px;
- height: 122.5px;
+  width: 50vw;
+ height: 12vw;
   color: #243D6F;
   background: #EEA57C26;
-  margin-top: 89.5px;
+  
   margin-bottom: 242.5px;
 
  }
  .part2{
    background-color: #2A2E41B2;
-   width: 35%;
-  height: 100%;
+   width: 35vw;
+  height: 100vw;
    font-family: Roboto;
    padding:  42px 50px ;
    padding-bottom: 100%;
@@ -243,59 +245,86 @@ font-family: Roboto;}
   flex-direction: row;
   justify-content: space-between;
   margin-top:54px ;
-margin-left: 50px;
+margin-left: 20px;
+margin-right: 20px;
 }
 .days{
   color: #FFFFFF;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: 50px;
+  margin-left: 20px;
+margin-right: 20px;
  
   
 }
 
-.day1:hover{
-  color: #3C82F9;
-  cursor: pointer;
-}
-.day2:hover{
-  color: #3C82F9;
-  cursor: pointer;
-}
-.day3:hover{
-  color: #3C82F9;
-  cursor: pointer;
-}
-.day4:hover{
-  color: #3C82F9;
-  cursor: pointer;
-}
-.day5:hover{
-  color: #3C82F9;
-  cursor: pointer;
-}
-.day6:hover{
-  color: #3C82F9;
-  cursor: pointer;
-}
-.day7:hover{
-  color: #3C82F9;
-  cursor: pointer;
-}
 
-
-.day1, .day2, .day3, .day4, .day5, .day6, .day7{
+ .day1, .day2, .day3, .day4, .day5, .day6, .day7{
   width: 14.2%;
   padding: 12px 0;
-  z-index: 2;
+  text-align: center;
+  
+ 
 }
+.day1:hover{
+  cursor: pointer;
+background:#3C82F9;
+border-radius: 50%;
+flex: 0 0 14%;
+
+}
+.day2:hover{
+  cursor: pointer;
+background:#3C82F9;
+border-radius: 50%;
+flex: 0 0 14%;
+
+}
+.day3:hover{
+  cursor: pointer;
+background:#3C82F9;
+border-radius: 50%;
+flex: 0 0 14%;
+
+}
+.day4:hover{
+  cursor: pointer;
+background:#3C82F9;
+border-radius: 50%;
+flex: 0 0 14%;
+
+}
+.day5:hover{
+  cursor: pointer;
+background:#3C82F9;
+border-radius: 50%;
+flex: 0 0 14%;
+
+}
+.day6:hover{
+  cursor: pointer;
+background:#3C82F9;
+border-radius: 50%;
+flex: 0 0 14%;
+
+}
+ .day7:hover{
+cursor: pointer;
+background:#3C82F9;
+border-radius: 50%;
+flex: 0 0 14%;
+
+  
+}
+
+
 
 .categories{
   color: white;
   box-sizing: border-box;
   margin-top: 54px;
-  margin-left: 50px;
+  margin-left: 0px;
   width: 300px;
   height: 186px;
  
@@ -309,6 +338,7 @@ margin-left: 50px;
   
 }
 
+
 .box1{
   color: white;
   background-color: #8576ED; 
@@ -317,11 +347,12 @@ margin-left: 50px;
   border-radius: 6px;
   margin-right: 14px;
   margin-bottom: 15px;
-
-border: none;
-
-  
+border: transparent;
 }
+.box1:hover{
+  cursor: pointer;
+}
+
 
 .box2{
   color: white;
@@ -331,6 +362,9 @@ width: 142px;
   border-radius: 6px;
   border: none;
 }
+.box2:hover{
+cursor: pointer;
+}
 
 .box3{
   color: white;
@@ -339,4 +373,7 @@ width: 142px;
   height: 40px;
   border-radius: 6px;
   border: none;
+}
+.box3:hover{
+  cursor: pointer;
 }
