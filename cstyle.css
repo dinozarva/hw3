@@ -90,16 +90,23 @@ color: #243D6F;
   color: #A4B0C3
  }
 
+ .time-item{
+   position: relative;
+ }
+ .line{
+   border-bottom: 2px solid #F3F3F3;
+   width: 50vw;
+   position: absolute;
+   left: 68px;
+   top: 8px;
+ }
+
  .plan{
    padding: 34px 60px 0;
    display: flex;
    flex-direction: column;
    align-items: stretch;
-   box-sizing: border-box;
-   border-top: none;
-   border-left: none;
-   border-right: none;
-   border-bottom: solid #F3F3F3;
+   
 
  }
   
@@ -111,7 +118,7 @@ color: #243D6F;
     border-right: none;
     border-bottom: none;
     border-left: solid #8576ED ;
-   position: static;
+   
    width: 560px;
   height: 62px;
    color:  #243D6F;
@@ -168,23 +175,66 @@ justify-content: space-around;
 margin-top: 42px;
 margin-bottom: 42px;
 color: white;
-font-family: Roboto;
-   }
+font-family: Roboto;}
 
-   .tuda, .suda{
-     width: 9px;
-     height: 18px;
-     
+.part2__btn{
+  position: relative;
+  flex: 0 0 9px;
+  background:transparent;
+  border: none;
+  padding: 0 ;
+
+  color: #FFFFFF;
+
+  box-sizing: border-box;
+}
+.part2__btn::before{
+  width: 300%;
+  aspect-ratio: 1;
+  display: block;
+
+  background: transparent;
+  border-radius: 50%;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-sizing: border-box;
+
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.part2__btn:hover{
+  
+  cursor: pointer;
+}
+.part2__btn:hover::before{
+  background: #3C82F9;
+}
+   .part2__btn-img{
+     display: block;
+
+     width: 100%;
+     aspect-ratio: 1/2;
+     fill: none;
+    stroke:currentColor;
+   stroke-width:2;
+   stroke-linecap:round;
+    stroke-linejoin:round;
+
+    position: relative;
+    z-index: 2;
+   }
+   .reverse{
+     transform: rotate(180deg);
    }
  
  .date{
-  
   border: groove darkgrey;
   border-left: none;
   border-right: none;
   padding-bottom: 62px;
-  
-
+  z-index: 2;
  }
  
 .weekdays{
@@ -201,11 +251,44 @@ margin-left: 50px;
   flex-direction: row;
   flex-wrap: wrap;
   margin-left: 50px;
+ 
+  
 }
+
+.day1:hover{
+  color: #3C82F9;
+  cursor: pointer;
+}
+.day2:hover{
+  color: #3C82F9;
+  cursor: pointer;
+}
+.day3:hover{
+  color: #3C82F9;
+  cursor: pointer;
+}
+.day4:hover{
+  color: #3C82F9;
+  cursor: pointer;
+}
+.day5:hover{
+  color: #3C82F9;
+  cursor: pointer;
+}
+.day6:hover{
+  color: #3C82F9;
+  cursor: pointer;
+}
+.day7:hover{
+  color: #3C82F9;
+  cursor: pointer;
+}
+
 
 .day1, .day2, .day3, .day4, .day5, .day6, .day7{
   width: 14.2%;
   padding: 12px 0;
+  z-index: 2;
 }
 
 .categories{
@@ -215,12 +298,14 @@ margin-left: 50px;
   margin-left: 50px;
   width: 300px;
   height: 186px;
+ 
 }
 
 .boxes{
   display: flex;
   flex-wrap: wrap;
   align-content: center;
+  margin-top: 24px;
   
 }
 

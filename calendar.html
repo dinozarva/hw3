@@ -29,8 +29,8 @@
             </div>
 
             <div class="buttons">
-                <img class="img1" src="img1\search-icon.svg" alt="">
-                <img class="img2" src="img1\layout-icon.svg" alt="">
+                <img class="img1" src="search-icon.svg" alt="">
+                <img class="img2" src="layout-icon.svg" alt="">
             </div>
         </section>
 
@@ -41,18 +41,30 @@
 
         <section class="timetable">
             <div class="time">
-                <div>09:00</div>
-                <div>10:00</div>
-                <div>11:00</div>
-                <div>12:00</div>
-                <div>13:00</div>
-                <div>14:00</div>
-                <div>15:00</div>
-                <div>16:00</div>
-                <div>17:00</div>
-                <div>18:00</div>
-                <div>19:00</div>
-                <div>20:00</div>
+                <div class="time-item">09:00 <div class="line"></div>
+                </div>
+                <div class="time-item">10:00 <div class="line"></div>
+                </div>
+                <div class="time-item">11:00 <div class="line"></div>
+                </div>
+                <div class="time-item">12:00 <div class="line"></div>
+                </div>
+                <div class="time-item">13:00 <div class="line"></div>
+                </div>
+                <div class="time-item">14:00 <div class="line"></div>
+                </div>
+                <div class="time-item">15:00 <div class="line"></div>
+                </div>
+                <div class="time-item">16:00 <div class="line"></div>
+                </div>
+                <div class="time-item">17:00 <div class="line"></div>
+                </div>
+                <div class="time-item">18:00 <div class="line"></div>
+                </div>
+                <div class="time-item">19:00 <div class="line"></div>
+                </div>
+                <div class="time-item">20:00 <div class="line"></div>
+                </div>
             </div>
             <div class="plan">
                 <div class="red-block">
@@ -73,11 +85,16 @@
 
     <section class="part2">
         <section class="part2__date">
-            <img class="tuda" src="img1\strelochka1.svg" alt="">
-            <div>
-                March 2018
-            </div>
-            <img class="suda" src="img1\strelochka2.svg" alt="">
+            <button class="part2__btn tuda" arria-label="next month"><svg class="part2__btn-img" viewBox="0 0 20 38"
+                    role="img" aria-label="">
+                    <path d="M19 1L1 19L19 37" />
+                </svg>
+            </button>
+            <span class="part2__title">March 2018</span>
+            <button class="part2__btn suda" arria-label="previous month"><svg class="part2__btn-img reverse"
+                    viewBox="0 0 20 38" role="img" aria-label="">
+                    <path d="M19 1L1 19L19 37" />
+                </svg></button>
         </section>
         <section class="date">
             <div class="weekdays">
